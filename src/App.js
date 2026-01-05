@@ -135,6 +135,7 @@ function Contact() {
       </form>
       <p>Téléphone : 0620722338</p>
       <p>Email : fadwaaitlahbib@gmail.com</p>
+      <p>gitHub: <a href="https://github.com/Fadixa" target="_blank" style={{ color: "white" }}>https://github.com/Fadixa</a></p>
       <p>LinkedIn : <a href="https://www.linkedin.com/in/fadwa-ait-lahbib-805411384" target="_blank" rel="noopener noreferrer"  style={{color:"white"}}>www.linkedin.com/in/fadwa-ait-lahbib-805411384</a></p>
       <p>Adresse : Quartier Izdihar, près de la Gare de Bouskoura, F88Q+XMG, Bouskoura, Région de Casablanca Settat</p>
 
