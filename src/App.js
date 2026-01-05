@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { Download } from 'lucide-react';
 
 // Composant Home
 function Home() {
@@ -134,9 +135,47 @@ function Contact() {
       </form>
       <p>Téléphone : 0620722338</p>
       <p>Email : fadwaaitlahbib@gmail.com</p>
-      <p>LinkedIn : <a href="https://www.linkedin.com/in/fadwa-ait-lahbib-805411384" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/fadwa-ait-lahbib-805411384</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/fadwa-ait-lahbib-805411384" target="_blank" rel="noopener noreferrer"  style={{color:"white"}}>www.linkedin.com/in/fadwa-ait-lahbib-805411384</a></p>
       <p>Adresse : Quartier Izdihar, près de la Gare de Bouskoura, F88Q+XMG, Bouskoura, Région de Casablanca Settat</p>
-      <p>Je vous remercie d’avoir pris le temps de lire mon CV. Je suis impatiente de vous rencontrer. Cordialement, Fadwa.</p>
+
+
+      {/* قسم تحميل السيرة الذاتية - Fadwa Ait Lahbib Portfolio */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '15px',
+        marginTop: '30px',
+        padding: '20px',
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+        borderRadius: '15px',
+        border: '1px solid #C71585'
+      }}>
+        <p style={{ margin: 0, fontSize: '1.1rem', fontWeight: '500' }}>
+          Besoin d'une version papier ?
+        </p>
+
+        <a
+          href="https://drive.google.com/file/d/1Cwn4yeCVVy6VkY8VPDVygAhwmpsILxEK/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            textDecoration: 'none',
+            backgroundColor: '#C71585',
+            padding: '12px 25px'
+          }}
+        >
+          <Download size={20} /> Télécharger mon CV (PDF)
+        </a>
+      </div>
+      
+      <br></br>
+      
+    
     </section>
   );
 }
